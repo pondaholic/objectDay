@@ -12,6 +12,4 @@ function personMaker() {
 }
 
 const naming = personMaker()
-console.log(naming['fullName']);
-
-//console.log(naming);
+console.log(naming.fullName());

@@ -11,3 +11,4 @@ function createMyObject() {
 
 const something = {}
 console.log(createMyObject(something));
+
