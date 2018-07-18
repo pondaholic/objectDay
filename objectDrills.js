@@ -9,4 +9,5 @@ function createMyObject() {
     }
 }
 
-console.log(createMyObject);
+const something = {}
+console.log(createMyObject(something));
