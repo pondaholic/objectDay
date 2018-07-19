@@ -1,6 +1,7 @@
 const person = {
 	name : 'John Doe',
-	jobTitle : 'Accountant'
+	jobTitle : 'Accountant',
+	boss : 'You'
 };
 
 const person2 = {
@@ -18,9 +19,21 @@ const array = [person, person2, person3]
 
 function iterate(arr) {
 	arr.forEach(item => {
-		console.log(item.jobTitle + ' : ' + item.name);
+		if (item.boss) {
+			console.log(`${item.jobTitle} ${item.name} reports to ${item.boss}.`)
+//		console.log(item.jobTitle + ' : ' + item.name);
+		} else { 
+			console.log(`${item.jobTitle} ${item.name} doesn't report to anybody.`)
+		}
 	}
 	);
 }
 
 iterate(array);
+
+const dinner = {
+	meals: ['breakfast', 'second breakfast', 'elevenses', 'lunch', 'afternoon tea', 'dinner', 'supper']
+};
+
+const hobbitdinner = dinner.meals[3];
+console.log(hobbitdinner);
